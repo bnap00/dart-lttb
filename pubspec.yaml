@@ -1,6 +1,6 @@
 name: lttb
 description: A LTTB downsampling plugin
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/bnap00/dart-lttb
 
 environment:
