@@ -1,3 +1,6 @@
+/* 
+  Function that takes array of data and a threshold, returns downsampled data
+*/
 List<List<num>> lttb(List<List<num>> data, int threshold) {
   int dataLength = data.length;
   if (threshold >= dataLength) {
@@ -53,9 +56,7 @@ List<List<num>> lttb(List<List<num>> data, int threshold) {
         nextA = rangeOffs.toDouble(); // Next a is this b
       }
     }
-    if (maxAreaPoint != null) {
-      sampled[sampledIndex++] = maxAreaPoint;
-    }
+    sampled[sampledIndex++] = maxAreaPoint;
     // sampled[sampledIndex++] = maxAreaPoint; // Pick this point from the bucket
     a = nextA.floor(); // This a is the next a (chosen b)
   }
